@@ -14,7 +14,7 @@ class LoginTxet extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children:  [
           CustomText(text: "Welcome Back 👋",
            color: Colors.black,
             size: 30,
@@ -26,7 +26,7 @@ class LoginTxet extends StatelessWidget {
                 fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
                  size: 15,
                  ),
-                  SizedBox(height: 24,)
+                 const SizedBox(height: 24,)
       
         ],
       ),
