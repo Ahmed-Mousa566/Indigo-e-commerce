@@ -14,7 +14,7 @@ class AuthToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 45,
+      height: 50,
       padding: const EdgeInsets.all(4),
       decoration: BoxDecoration(
         color: const Color(0xffEAE7E7),
@@ -23,7 +23,7 @@ class AuthToggle extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: buildButton('Sign In', Icons.login, 0),
+            child: buildButton('LogIn', Icons.login, 0),
           ),
           Expanded(
             child: buildButton(
@@ -43,6 +43,7 @@ class AuthToggle extends StatelessWidget {
     return GestureDetector(
       onTap: () => onChanged(index),
       child: AnimatedContainer(
+        height: 45,
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
           color: isSelected ? Colors.white : Colors.transparent,
@@ -62,8 +63,8 @@ class AuthToggle extends StatelessWidget {
             Text(
               title,
               style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
+                fontSize: 17,
+                fontWeight: FontWeight.w700,
                 color: isSelected
                     ? const Color(0xff008A9A)
                     : const Color(0xff604D46),
