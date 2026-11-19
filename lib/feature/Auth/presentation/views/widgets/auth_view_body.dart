@@ -1,5 +1,6 @@
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/auth_toggel.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/custom_auth_app_bar.dart';
+import 'package:e_commerce/feature/Auth/presentation/views/widgets/login_form.dart';
 import 'package:flutter/material.dart';
 
 class AuthViewBody extends StatefulWidget {
@@ -38,7 +39,7 @@ class _AuthViewBodyState extends State<AuthViewBody> {
 
           // Display the selected form
           if (selectedIndex == 0)
-            const Text('Login Form')
+            const LoginForm()
             
           else
             const Text('Register Form'),
