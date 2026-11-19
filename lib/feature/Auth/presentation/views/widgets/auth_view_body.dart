@@ -14,13 +14,13 @@ class _AuthViewBodyState extends State<AuthViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    final String s;
+    final String title = selectedIndex == 0 ? 'Login' : 'Register';
     return Scaffold(
       body: Column(
         children: [
           const SizedBox(height: 25),
 
-          CustomAuthAppBar(title: s),
+          CustomAuthAppBar(title: title),
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -38,8 +38,7 @@ class _AuthViewBodyState extends State<AuthViewBody> {
 
           // Display the selected form
           if (selectedIndex == 0)
-            
-              s = 'Login',
+            const Text('Login Form')
             
           else
             const Text('Register Form'),
