@@ -1,4 +1,6 @@
+import 'package:e_commerce/core/utils/constant.dart';
 import 'package:e_commerce/core/utils/widgets/custm_text.dart';
+import 'package:e_commerce/feature/Auth/presentation/views/widgets/emali_labal.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatelessWidget {
@@ -6,25 +8,35 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 360,
-      color: Colors.white,
-      child: const Column(
-        children: [
-          TextFormFailed(
-            hint: "Email",
-            obscureText: false,
-          ),
-          
-          
-        ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      child: Container(
+        height: 360,
+        color: Colors.white,
+        child: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            EmailLable(),
+            SizedBox(height: 6),
+            TextFormFailed(hint: "Email", obscureText: false),
+
+
+          ],
+        ),
       ),
     );
   }
 }
 
+
+
 class TextFormFailed extends StatelessWidget {
-  const TextFormFailed({super.key, required this.hint, this.onchanged, required this.obscureText});
+  const TextFormFailed({
+    super.key,
+    required this.hint,
+    this.onchanged,
+    required this.obscureText,
+  });
   final String hint;
   final Function(String)? onchanged;
   final bool obscureText;
@@ -41,16 +53,22 @@ class TextFormFailed extends StatelessWidget {
       },
       onChanged: onchanged,
       decoration: InputDecoration(
-        hint: CustomText(
-          text: hint,
-          color: const Color.fromARGB(255, 194, 191, 191),
+        filled: true,
+        fillColor: Color(0xffF6F3F2),
+
+        prefixIcon: Icon(Icons.email_outlined, color: Color(0xff8D7168)),
+        hint: CustomText(text: hint, color: Color(0xff8D7168), size: 16),
+        border: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white),
+          borderRadius: BorderRadius.circular(12),
         ),
-        border: OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Colors.white),
+          borderRadius: BorderRadius.circular(12),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: const Color.fromARGB(255, 97, 180, 33)),
+          borderRadius: BorderRadius.circular(12),
         ),
       ),
     );
