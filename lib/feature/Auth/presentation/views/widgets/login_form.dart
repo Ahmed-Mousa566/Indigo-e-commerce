@@ -1,6 +1,7 @@
 import 'package:e_commerce/core/utils/constant.dart';
 import 'package:e_commerce/core/utils/widgets/custm_text.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/emali_labal.dart';
+import 'package:e_commerce/feature/Auth/presentation/views/widgets/text_form_failed.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatelessWidget {
@@ -18,7 +19,20 @@ class LoginForm extends StatelessWidget {
           children: [
             EmailLable(),
             SizedBox(height: 6),
-            TextFormFailed(hint: "Email", obscureText: false),
+            TextFormFailed(
+              prefixIcon: Icon(Icons.email_outlined, color: Color(0xff8D7168)),
+              hint: "Email@example.com",
+               obscureText: false),
+            SizedBox(height: 16),
+            PasswordLable(),
+            SizedBox(height: 6),
+            TextFormFailed(
+              prefixIcon: Icon(Icons.lock_outlined, color: Color(0xff8D7168)),
+              hint: "••••••••••••",
+              obscureText: true),
+              
+
+
 
 
           ],
@@ -28,49 +42,30 @@ class LoginForm extends StatelessWidget {
   }
 }
 
-
-
-class TextFormFailed extends StatelessWidget {
-  const TextFormFailed({
-    super.key,
-    required this.hint,
-    this.onchanged,
-    required this.obscureText,
-  });
-  final String hint;
-  final Function(String)? onchanged;
-  final bool obscureText;
+class PasswordLable extends StatelessWidget {
+  const PasswordLable({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      obscureText: obscureText,
-      validator: (value) {
-        if (value == null || value.isEmpty) {
-          return "field is required";
-        }
-        return null;
-      },
-      onChanged: onchanged,
-      decoration: InputDecoration(
-        filled: true,
-        fillColor: Color(0xffF6F3F2),
-
-        prefixIcon: Icon(Icons.email_outlined, color: Color(0xff8D7168)),
-        hint: CustomText(text: hint, color: Color(0xff8D7168), size: 16),
-        border: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.white),
-          borderRadius: BorderRadius.circular(12),
+    return const Row(
+      children: [
+        CustomText(
+          text: "Password",
+          color: Colors.black,
+          size: 16,
+          fontWeight: FontWeight.w500,
         ),
-        enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.white),
-          borderRadius: BorderRadius.circular(12),
+        Spacer(),
+        CustomText(
+          text: "Forget Password?",
+          color: Constant.KprimaryColor,
+          size: 16,
+          fontWeight: FontWeight.w500,
         ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: const Color.fromARGB(255, 97, 180, 33)),
-          borderRadius: BorderRadius.circular(12),
-        ),
-      ),
+      ],
     );
   }
 }
+
+
+

@@ -13,14 +13,14 @@ class EmailLable extends StatelessWidget {
         CustomText(
           text: "Email or Mobile Number",
           color: Colors.black,
-          size: 14,
+          size: 16,
           fontWeight: FontWeight.w500,
         ),
         Spacer(),
         CustomText(
           text: "Egypt(+20)",
           color: Color(0xff59413A),
-          size: 14,
+          size: 16,
           fontWeight: FontWeight.w300,
         ),
       ],
