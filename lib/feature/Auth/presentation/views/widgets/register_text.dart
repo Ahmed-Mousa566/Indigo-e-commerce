@@ -17,7 +17,7 @@ class RegisterText extends StatelessWidget {
           CustomText(
             text:
                 "Join 100,000+ happy shoppers in Cairo & across Egypt for premier same-day delivery.",
-            color: Constant.KsubTittle,
+            color: Constant.kSubTittle,
             fontWeight: FontWeight.w400,
             fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
             size: 15,

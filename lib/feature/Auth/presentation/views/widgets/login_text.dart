@@ -21,7 +21,7 @@ class LoginTxet extends StatelessWidget {
             ),
                CustomText(
                  text: "Sign in to access your wishlist, tracked EGP orders,and VIP member deals.",
-                color: Constant.KsubTittle,
+                color: Constant.kSubTittle,
                 fontWeight: FontWeight.w400,
                 fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
                  size: 15,

@@ -25,7 +25,7 @@ class CustomAuthAppBar extends StatelessWidget {
               text: title,
               size: 25,
               fontWeight: FontWeight.bold,
-              color: Constant.KprimaryColor,
+              color: Constant.kPrimaryColor,
             ),
             const SizedBox(width: 60),
           ],

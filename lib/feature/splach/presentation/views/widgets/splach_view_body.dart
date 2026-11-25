@@ -50,7 +50,7 @@ class _SplchViewBodyState extends State<SplchViewBody> {
               text: 'Indigo ',
               size: 34,
               fontWeight: FontWeight.bold,
-              color: Constant.KprimaryColor,
+              color: Constant.kPrimaryColor,
             ),
             CustomText(
               text: 'Store',
@@ -64,7 +64,7 @@ class _SplchViewBodyState extends State<SplchViewBody> {
           text: 'EGYPT\'S PREMIER CURATED SHOPPING',
           size: 14,
           fontWeight: FontWeight.w500,
-          color: Constant.KsubTittle,
+          color: Constant.kSubTittle,
         ),
       ],
     );
