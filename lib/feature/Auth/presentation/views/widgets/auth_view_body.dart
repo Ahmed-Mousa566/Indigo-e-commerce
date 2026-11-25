@@ -21,17 +21,14 @@ class _AuthViewBodyState extends State<AuthViewBody> {
   Widget build(BuildContext context) {
     final String title = selectedIndex == 0 ? 'Login' : 'Register';
     return Scaffold(
+      backgroundColor: const Color(0xffF3F0EE),
       body: Column(
         children: [
           const SizedBox(height: 25),
 
           CustomAuthAppBar(title: title),
-           SizedBox(height: 16,),
-           if (selectedIndex == 0)
-          LoginTxet()
-        
-        else 
-        RegisterText(),
+          SizedBox(height: 16),
+          if (selectedIndex == 0) LoginTxet() else RegisterText(),
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -48,18 +45,9 @@ class _AuthViewBodyState extends State<AuthViewBody> {
           const SizedBox(height: 25),
 
           // Display the selected form
-          if (selectedIndex == 0)
-            const LoginForm()
-            
-          else
-            const RegisterForm(),
-
-           
-
-
+          if (selectedIndex == 0) const LoginForm() else const RegisterForm(),
         ],
       ),
     );
   }
 }
-

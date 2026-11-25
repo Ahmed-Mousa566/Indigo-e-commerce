@@ -7,29 +7,26 @@ class CustomAuthAppBar extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: Container(
-        color: Colors.white,
-        height: 60,
-        child: Row(
-          children: [
-            IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: const Icon(Icons.arrow_back_ios, ),
-            ),
-            const Spacer(),
-             CustomText(
-              text: title,
-              size: 25,
-              fontWeight: FontWeight.bold,
-              color: Constant.kPrimaryColor,
-            ),
-            const SizedBox(width: 60),
-          ],
-        ),
+    return Container(
+      color: Colors.white,
+      height: 60,
+      child: Row(
+        children: [
+          IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back_ios, ),
+          ),
+          const Spacer(),
+           CustomText(
+            text: title,
+            size: 25,
+            fontWeight: FontWeight.bold,
+            color: Constant.kPrimaryColor,
+          ),
+          const SizedBox(width: 60),
+        ],
       ),
     );
   }
