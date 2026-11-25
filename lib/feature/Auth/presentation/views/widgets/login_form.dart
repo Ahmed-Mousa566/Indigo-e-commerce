@@ -1,6 +1,7 @@
 
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/custom_botttom.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/emali_labal.dart';
+import 'package:e_commerce/feature/Auth/presentation/views/widgets/guest_button.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/or_divider.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/password_lable.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/remmeber_me.dart';
@@ -52,6 +53,12 @@ class LoginForm extends StatelessWidget {
                 SizedBox(height: 16,),
       
                 SocialButtonsRow(),
+
+                SizedBox(height: 16,),
+
+                GuestButton(),
+
+
       
       
       
