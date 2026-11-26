@@ -14,8 +14,8 @@ class LabeledField extends StatelessWidget {
       children: [
         CustomText(
           text: label,
-          color: Constant.kSubTittle,
-          size: 13,
+          color: Colors.black,
+          size: 16,
           fontWeight: FontWeight.w600,
         ),
         const SizedBox(height: 6),
