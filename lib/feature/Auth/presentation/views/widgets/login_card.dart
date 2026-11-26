@@ -1,14 +1,14 @@
+import 'package:e_commerce/core/app_router.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/custom_botttom.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/emali_labal.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/password_lable.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/remmeber_me.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/text_form_failed.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginCard extends StatelessWidget {
-  const LoginCard({
-    super.key,
-  });
+  const LoginCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,37 +25,34 @@ class LoginCard extends StatelessWidget {
           ),
         ],
       ),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          EmailLable(),
-          SizedBox(height: 6),
-          TextFormFailed(
-            prefixIcon: Icon(
-              Icons.email_outlined,
-              color: Color(0xff8D7168),
-            ),
+          const EmailLable(),
+          const SizedBox(height: 6),
+          const TextFormFailed(
+            prefixIcon: Icon(Icons.email_outlined, color: Color(0xff8D7168)),
             hint: "Email@example.com",
             obscureText: false,
           ),
-          SizedBox(height: 16),
-          PasswordLable(),
-          SizedBox(height: 6),
-          TextFormFailed(
-            prefixIcon: Icon(
-              Icons.lock_outlined,
-              color: Color(0xff8D7168),
-            ),
+          const SizedBox(height: 16),
+          const PasswordLable(),
+          const SizedBox(height: 6),
+          const TextFormFailed(
+            prefixIcon: Icon(Icons.lock_outlined, color: Color(0xff8D7168)),
             hint: "••••••••••••",
             obscureText: true,
           ),
-    
-          SizedBox(height: 12),
-    
-          RememberMeRow(),
-          SizedBox(height: 12),
-    
-          Custombutton(text: "Login", ontap: null),
+
+          const SizedBox(height: 12),
+
+          const RememberMeRow(),
+          const SizedBox(height: 12),
+
+          Custombutton(
+            text: "Login",
+            ontap: () => GoRouter.of(context).push(AppRouter.kHomeView),
+          ),
         ],
       ),
     );
