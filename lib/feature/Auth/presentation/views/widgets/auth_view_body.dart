@@ -23,7 +23,7 @@ class _AuthViewBodyState extends State<AuthViewBody> {
       backgroundColor: const Color(0xffF3F0EE),
       body: Column(
         children: [
-          const SizedBox(height: 25),
+        //  const SizedBox(height: 25),
 
           CustomAuthAppBar(title: title),
           SizedBox(height: 16),

@@ -1,3 +1,4 @@
+import 'package:e_commerce/feature/home/presentation/views/widgets/custom_home_appbar.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -6,9 +7,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text('Home View'),
-      ),
+      body: Column(children: [CustomHomeAppbar(title: "Home")]),
     );
   }
 }
