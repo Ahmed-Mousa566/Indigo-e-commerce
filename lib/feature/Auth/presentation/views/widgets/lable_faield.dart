@@ -1,4 +1,3 @@
-import 'package:e_commerce/core/utils/constant.dart';
 import 'package:e_commerce/core/utils/widgets/custm_text.dart';
 import 'package:flutter/material.dart';
 

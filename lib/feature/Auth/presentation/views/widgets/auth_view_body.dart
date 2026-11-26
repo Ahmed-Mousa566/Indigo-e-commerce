@@ -4,7 +4,6 @@ import 'package:e_commerce/feature/Auth/presentation/views/widgets/login_form.da
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/login_text.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/register_form.dart';
 import 'package:e_commerce/feature/Auth/presentation/views/widgets/register_text.dart';
-import 'package:e_commerce/feature/Auth/presentation/views/widgets/remmeber_me.dart';
 import 'package:flutter/material.dart';
 
 class AuthViewBody extends StatefulWidget {
