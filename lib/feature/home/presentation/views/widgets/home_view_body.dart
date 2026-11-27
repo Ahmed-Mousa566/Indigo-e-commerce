@@ -1,3 +1,4 @@
+import 'package:e_commerce/feature/home/presentation/views/widgets/categories_section.dart';
 import 'package:e_commerce/feature/home/presentation/views/widgets/custom_home_appbar.dart';
 import 'package:e_commerce/feature/home/presentation/views/widgets/home_header.dart';
 import 'package:e_commerce/feature/home/presentation/views/widgets/photo_offer.dart';
@@ -20,6 +21,7 @@ class HomeViewBody extends StatelessWidget {
           SearchFailed(),
           SizedBox(height: 8),
           PhotoOffer(),
+          CategoriesSection(),
           
         ],
       ),
