@@ -14,6 +14,8 @@ class CategoryItem extends StatelessWidget {
     'home': Icons.chair_outlined,
     'beauty': Icons.spa_outlined,
     'sports': Icons.fitness_center,
+    'books': Icons.menu_book_outlined,
+    'baby': Icons.child_care_outlined,
   };
 
   IconData get _icon => _icons[category.slug] ?? Icons.category_outlined;

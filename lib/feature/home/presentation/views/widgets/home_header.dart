@@ -14,7 +14,7 @@ class HomeHeader extends StatelessWidget {
         children: [
           CustomText(
             text: "Hello, Mousa 👋",
-            size: 22,
+            size: 20,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
@@ -24,8 +24,8 @@ class HomeHeader extends StatelessWidget {
               Icon(Icons.location_on_outlined, color: Constant.kPrimaryColor),
               CustomText(
                 text: "Deliver to Cairo, Maadi",
-                size: 18,
-                fontWeight: FontWeight.bold,
+                size: 16,
+                fontWeight: FontWeight.w400,
                 color: Constant.kSubTittle,
               ),
             ],

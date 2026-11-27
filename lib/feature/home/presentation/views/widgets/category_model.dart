@@ -16,4 +16,6 @@ const List<CategoryModel> dummyCategories = [
   CategoryModel(id: 3, name: 'Home', slug: 'home'),
   CategoryModel(id: 4, name: 'Beauty', slug: 'beauty'),
   CategoryModel(id: 5, name: 'Sports', slug: 'sports'),
+  CategoryModel(id: 6, name: 'Books', slug: 'books'),
+  CategoryModel(id: 7, name: 'Baby', slug: 'baby'),
 ];

@@ -6,11 +6,16 @@ class SearchFailed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 12.0),
       child: const SearchBar(
         leading: Icon(Icons.search),
-        hintText: ' Search 50,000+ items, brands...',
+        hintText: 'Search 50,000+ items, brands...',
         backgroundColor: WidgetStatePropertyAll(Colors.white),
+        shape: WidgetStatePropertyAll(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(16)),
+          ),
+        ),
         
       ),
     );
