@@ -11,11 +11,7 @@ class SearchFailed extends StatelessWidget {
         leading: Icon(Icons.search),
         hintText: ' Search 50,000+ items, brands...',
         backgroundColor: WidgetStatePropertyAll(Colors.white),
-        shape: WidgetStatePropertyAll(
-    RoundedRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(15)),
-    ),
-  ),
+        
       ),
     );
   }
